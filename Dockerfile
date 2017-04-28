@@ -17,4 +17,4 @@ VOLUME /srv/gitbook
 
 EXPOSE 4000 35729
 
-CMD /usr/local/bin/gitbook serve
+CMD gitbook install && gitbook serve
