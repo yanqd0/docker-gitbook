@@ -2,16 +2,25 @@
 
 sudo: required
 
+language: python
+
+python:
+  - "3.6"
+
 branches:
   only:
-  - master
+    - master
 
 services:
   - docker
+
+install:
+  - pip install docker-compose
 
 before_script:
   - docker --version
 
 script:
   - docker build --tag yanqd0/gitbook .
-  - docker run yanqd0/gitbook which gitbook
+  - docker run --rm yanqd0/gitbook which gitbook
+  - docker-compose --file example.docker-compose.yml up -d
