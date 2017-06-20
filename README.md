@@ -50,12 +50,12 @@ services:
 
 And then, run `docker-compose up -d`.
 
-There is a verified [example.docker-compose.yml].
+There is a verified [docker-compose.yml] for example.
 
 [![Build Status](https://travis-ci.org/yanqd0/docker-gitbook.svg?branch=master)](https://travis-ci.org/yanqd0/docker-gitbook)
 
 [docker-compose.yml file]:https://docs.docker.com/compose/compose-file/
-[example.docker-compose.yml]:https://github.com/yanqd0/docker-gitbook/blob/master/example.docker-compose.yml
+[docker-compose.yml]:https://github.com/yanqd0/docker-gitbook/blob/master/docker-compose.yml
 
 ## Version
 

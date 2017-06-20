@@ -18,9 +18,13 @@ install:
   - pip install docker-compose
 
 before_script:
-  - docker --version
+  - docker version
+  - docker-compose version
 
 script:
   - docker build --tag yanqd0/gitbook .
   - docker run --rm yanqd0/gitbook which gitbook
-  - docker-compose --file example.docker-compose.yml up -d
+  - docker-compose up -d
+
+after_script:
+  - docker-compose down
