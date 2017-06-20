@@ -13,22 +13,32 @@ The smallest gitbook docker image built from Alpine.
 docker pull yanqd0/gitbook
 ```
 
+Docker Hub: <https://hub.docker.com/r/yanqd0/gitbook/>
+
 ## Usage
 
 There are two simple ways to use it, `docker run` or `docker-compose up`.
 
-In the gitbook project, execute `docker` commands.
+### docker run
+
+In the gitbook project, execute the command below:
 
 ```sh
 docker run -v $PWD:/srv/gitbook -p 4000:4000 yanqd0/gitbook
 ```
 
-I never run it like this, except for debug. I always prefer [docker-compose], which can be easily [installed] and used.
+If your current directory is not your gitbook project, you can replace `$PWD` with the path.
 
-You can write your `docker-compose.yml` like this:
+### docker-compose up
+
+It is not a good way to use `docker run` in your production environment.
+
+I prefer to use a [docker-compose.yml file].
+
+You can write a `docker-compose.yml` in your gitbook project like this:
 
 ```yaml
-version: '2'
+version: '3'
 services:
   gitbook:
     image: yanqd0/gitbook
@@ -38,14 +48,13 @@ services:
       - 4000:4000
 ```
 
-And then, run `docker-compose up`.
+And then, run `docker-compose up -d`.
 
 There is a verified [example.docker-compose.yml].
 
 [![Build Status](https://travis-ci.org/yanqd0/docker-gitbook.svg?branch=master)](https://travis-ci.org/yanqd0/docker-gitbook)
 
-[docker-compose]:https://github.com/docker/compose
-[installed]:https://docs.docker.com/compose/install/
+[docker-compose.yml file]:https://docs.docker.com/compose/compose-file/
 [example.docker-compose.yml]:https://github.com/yanqd0/docker-gitbook/blob/master/example.docker-compose.yml
 
 ## Version
