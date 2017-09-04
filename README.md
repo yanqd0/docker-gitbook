@@ -66,6 +66,20 @@ There is a verified [docker-compose.yml] for example.
 | GitBook CLI | 2.3.2   |
 | GitBook     | 3.2.3   |
 
+It is welcome to remind me about updates with [issues].
+
+[issues]:https://github.com/yanqd0/docker-gitbook/issues/new
+
+## Size
+
+| Status     | Size                                |
+| ------     | ----                                |
+| Compressed | [![][microbadger.svg]][microbadger] |
+| Extracted  | 190 MB                              |
+
+[microbadger.svg]:https://images.microbadger.com/badges/image/yanqd0/gitbook.svg
+[microbadger]:https://microbadger.com/images/yanqd0/gitbook
+
 ## License
 
 [![License](https://img.shields.io/github/license/yanqd0/docker-gitbook.svg)](https://github.com/yanqd0/docker-gitbook/blob/master/LICENSE)
@@ -75,9 +89,9 @@ This repository is inspired by [fellah/gitbook].
 The base image is changed to Alpine [node], which makes it much smaller.
 The CMD is changed to `gitbook install && gitbook serve`, which will install [GitBook Plugins] before served.
 
-> The MIT License (MIT)
+> MIT License
 >
-> Copyright (c) 2017 yanqd0@outlook.com
+> Copyright (c) 2017 Yan QiDong <yanqd0@outlook.com>
 
 [fellah/gitbook]:https://hub.docker.com/r/fellah/gitbook/~/dockerfile/
 [node]:https://hub.docker.com/_/node/
