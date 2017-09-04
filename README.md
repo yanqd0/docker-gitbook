@@ -93,6 +93,6 @@ The CMD is changed to `gitbook install && gitbook serve`, which will install [Gi
 >
 > Copyright (c) 2017 Yan QiDong <yanqd0@outlook.com>
 
-[fellah/gitbook]:https://hub.docker.com/r/fellah/gitbook/~/dockerfile/
+[fellah/gitbook]:https://hub.docker.com/r/fellah/gitbook/
 [node]:https://hub.docker.com/_/node/
 [GitBook Plugins]:https://plugins.gitbook.com/
