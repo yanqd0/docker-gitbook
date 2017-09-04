@@ -63,8 +63,8 @@ There is a verified [docker-compose.yml] for example.
 | ----        | ------- |
 | node        | 7.9.0   |
 | npm         | 4.2.0   |
-| GitBook CLI | 2.3.0   |
-| GitBook     | 3.2.2   |
+| GitBook CLI | 2.3.2   |
+| GitBook     | 3.2.3   |
 
 ## License
 

@@ -2,7 +2,7 @@ FROM node:7.9.0-alpine
 
 MAINTAINER Yan QiDong <yanqd0@outlook.com>
 
-ARG VERSION=3.2.2
+ARG VERSION=3.2.3
 
 LABEL version=$VERSION
 
